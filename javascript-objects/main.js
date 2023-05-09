@@ -26,7 +26,7 @@ console.log('value of vehicle["color"]:', vehicle["color"]);
 console.log('value of vehicle["isConvertible"]:', vehicle["isConvertible"]);
 console.log("value of vehicle:", vehicle);
 
-let pet = {
+const pet = {
   name: "Shiloh",
   type: "Beagle"
 };
