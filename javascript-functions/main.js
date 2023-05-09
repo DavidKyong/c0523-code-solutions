@@ -1,5 +1,5 @@
 function convertMinutesToSeconds(minutes) {
-  let seconds = minutes * 60;
+  const seconds = minutes * 60;
   return seconds;
 }
 const secondsResults = convertMinutesToSeconds(20);
