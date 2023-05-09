@@ -1,4 +1,4 @@
-let student = {
+const student = {
   firstName: "David",
   lastName: "Kyong",
   age: 26
@@ -14,7 +14,7 @@ console.log("value of student.livesInIrvine:", student.livesInIrvine);
 console.log("value of previousOcupation:", student.previousOcupation);
 console.log("value of student:", student);
 
-let vehicle = {
+const vehicle = {
   make: "Toyota",
   model: "Corolla",
   year: 2016
