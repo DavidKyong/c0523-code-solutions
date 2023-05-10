@@ -17,15 +17,15 @@ const randomHero = heroes[randomIndex];
 console.log("value of randomHero:", randomHero);
 
 const library = [
-   autoBio = {
+   {
     title: 'Me, myself, and I',
     author: 'I dont know who to put'
   },
-  bio = {
+  {
     title: 'About someone else',
     author: 'I also dont know what to put'
   },
-  fantasy = {
+  {
     title: 'Harry Potter',
     author: 'J.K. Rowling'
   }
@@ -37,11 +37,11 @@ const firstBook = library.shift();
 console.log("firstBook:", firstBook);
 
 
-var js = {
+const js = {
   title: 'JavaScript for Impatient Programmers',
   author: 'Dr. Axel Rauschmayer',
 };
-var css = {
+const css = {
   title: 'CSS Secrets',
   author: 'Lea Verou',
 };
