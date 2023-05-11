@@ -2,11 +2,12 @@
 
 
 function getLastNameOfPerson(person) {
-  const me = {
-  firstName: "David",
-  lastName: "Kyong"
-};
+
   return person.lastName;
 }
+const me2 = {
+  firstName: 'David',
+  lastName: 'Kyong',
+};
 const getLastNameOfPersonResults = getLastNameOfPerson(me)
 console.log(getLastNameOfPerson);
