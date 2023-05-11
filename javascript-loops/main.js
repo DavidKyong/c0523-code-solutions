@@ -7,7 +7,7 @@
             getValues
  */
 function getNumbersToTen() {
-  let numbers = [];
+  const numbers = [];
   let currentNumber = 1;
   while (currentNumber > 0 && currentNumber <= 10){
     numbers.push(currentNumber);
@@ -17,7 +17,7 @@ function getNumbersToTen() {
 }
 
 function getEvenNumbersToTwenty() {
-  let evenNumbers = [];
+  const evenNumbers = [];
   let currentNumber = 2;
   while (currentNumber % 2 === 0 && currentNumber <= 20){
     evenNumbers.push(currentNumber);
@@ -43,7 +43,7 @@ function logEachCharacter(string) {
 }
 
 function doubleAll(numbers) {
-  let doubled = [];
+  const doubled = [];
   for (let i = 0; i < numbers.length; i++) {
     let double = numbers[i] * 2;
     doubled.push(double);
@@ -52,7 +52,7 @@ function doubleAll(numbers) {
 }
 
 function getKeys(object) {
-  let keys = [];
+  const keys = [];
   for (let prop in object) {
     keys.push(prop);
   }
@@ -60,7 +60,7 @@ function getKeys(object) {
 }
 
 function getValues(object) {
-  let values = [];
+  const values = [];
   for (let prop in object) {
     values.push(object[prop]);
   }
