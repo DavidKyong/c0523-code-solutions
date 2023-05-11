@@ -53,7 +53,7 @@ function doubleAll(numbers) {
 
 function getKeys(object) {
   const keys = [];
-  for (let prop in object) {
+  for (const prop in object) {
     keys.push(prop);
   }
   return keys;
@@ -61,7 +61,7 @@ function getKeys(object) {
 
 function getValues(object) {
   const values = [];
-  for (let prop in object) {
+  for (const prop in object) {
     values.push(object[prop]);
   }
   return values;
