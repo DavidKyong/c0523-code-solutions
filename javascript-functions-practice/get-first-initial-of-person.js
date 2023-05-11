@@ -7,5 +7,5 @@ const lea2 = {
   firstName: 'Lea',
   lastName: 'Verou',
 };
-const getFirstInitialOfPersonResults = getFirstInitialOfPerson(lea);
+const getFirstInitialOfPersonResults = getFirstInitialOfPerson(lea2);
 console.log(getFirstInitialOfPersonResults);
