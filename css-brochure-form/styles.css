@@ -1,0 +1,62 @@
+h3 {
+  color: #EC5C57;
+  text-align: center;
+}
+
+body {
+   font-family: "Brandon Grotesque";
+  font-style: normal;
+  font-weight: normal;
+  src: url("BrandonGrotesque-Regular.woff2") format("woff2");
+  width: 320px;
+  margin: auto;
+}
+
+form {
+  font-size: 9px;
+}
+
+
+#email,
+#name,
+#city,
+#engineers {
+  width: 310px;
+  height: 37px;
+  margin: 10px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+ div {
+   margin-left:20px;
+  font-weight: bold;
+  margin-bottom: -8px;
+  color: #2B2B2B;
+
+}
+
+button {
+  margin-top: 2px;
+  margin-left: 234px;
+  color: white;
+  background-color: #EC5C57;
+  border-radius: 20px;
+  padding: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-color:#EC5C57;
+  box-shadow: none;
+  font-size: 11px;
+  border: solid;
+}
+
+select {
+  background-color: #F3F3F3;
+  border-color:#A6AAA9;
+  font-size: 12px;
+}
+
+input {
+  border: 1px solid #A6AAA9;
+}
