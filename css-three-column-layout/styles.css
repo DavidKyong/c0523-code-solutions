@@ -14,9 +14,7 @@ body {
   display: flex;
 }
 
-.column-1,
-.column-2,
-.column-3 {
+.column-one-third{
   flex-basis: calc(100% / 3);
   margin: 35px;
 }
