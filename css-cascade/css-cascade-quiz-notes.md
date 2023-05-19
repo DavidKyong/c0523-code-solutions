@@ -11,7 +11,7 @@ The later order you put stuff in css, those values take hold more control.
 - How is it possible for the styles of an element to be applied to its children as well without an additional CSS rule?
 As long as the parent element has a property and the child does not, the child takes on the parent element property as well.
 - List the three selector types in order of increasing specificity.
-id, class, type
+type, class, id
 - Why is using `!important` considered bad practice?
 Because it defeats the importance of understanding and using specificity and cascade.
 
