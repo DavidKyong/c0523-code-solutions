@@ -13,7 +13,7 @@ As long as the parent element has a property and the child does not, the child t
 - List the three selector types in order of increasing specificity.
 type, class, id
 - Why is using `!important` considered bad practice?
-Because it defeats the importance of understanding and using specificity and cascade.
+Because it defeats the purpose of understanding and using specificity and cascade.
 
 ## Notes
 
