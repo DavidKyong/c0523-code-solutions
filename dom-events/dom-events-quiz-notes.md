@@ -11,11 +11,11 @@ It is a way for a code to react when stuff in the system just happen.
 - Are all possible parameters required to use a JavaScript method or function?
 No
 - What method of element objects lets you set up a function to be called when a specific type of event occurs?
-Dom query
+addeventlistener
 - What is a callback function?
 A function passed into another function as an argument.
 - What object is passed into an event listener callback when the event fires?
-The dom query that was referenced.
+The event object
 - What is the `event.target`? If you weren't sure, how would you check? Where could you get more information about it?
 Check the console of the website.
 - What is the difference between these two snippets of code?
