@@ -9,7 +9,7 @@ To make sure it works, and it helps with debugging.
 - What is a "model"?
 A visual representation showing what object is supposed to look like.
 - Which "document" is being referred to in the phrase Document Object Model?
-The main entry point to the page
+The main entry point to the page. The current html
 - What is the word "object" referring to in the phrase Document Object Model?
 The tags in html
 - What is a DOM Tree?
