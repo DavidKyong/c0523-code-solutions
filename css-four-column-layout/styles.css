@@ -1,0 +1,61 @@
+.container {
+  width: 75rem;
+  height: 39rem;
+  margin: auto;
+  background-color: #F7F8FA;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+}
+
+.column-one-fourth {
+  flex-basis: 25%;
+}
+
+.mainTitle {
+  flex-basis: 100%;
+  text-align: center;
+  font-family: Barlow;
+  font-weight: 900;
+}
+
+
+ .phone-first {
+  margin-left: 5rem;
+}
+
+.phone-second {
+  margin-left: .5rem;
+}
+
+.phone-third {
+  margin-right: .5rem;
+}
+
+.phone-fourth {
+  margin-right: 5rem;
+}
+
+
+.logo img {
+  width: 65px;
+  margin-top: -5px;
+}
+
+.logoTitle {
+  font-family: Barlow;
+  padding-top:
+}
+
+.description {
+  font-family: Barlow;
+  font-size: 11px;
+  font-weight: 200;
+}
+
+img {
+  width: 15rem;
+
+}
