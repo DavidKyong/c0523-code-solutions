@@ -9,7 +9,7 @@ function singleClick(event) {
   if (event.target && event.target.nodeName === "BUTTON") {
    console.log('closest .task-list-item', event.target.closest('.task-list-item'));
   }
-  const removing = event.target.closest('.task-list-item');
+  const $removing = event.target.closest('.task-list-item');
   removing.remove();
 }
 
