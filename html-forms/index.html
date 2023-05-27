@@ -6,52 +6,59 @@
   <body>
     <h1>Coding Form!</h1>
       <form>
+        <div>
+          <label for="email">Email</label>
+            <br><input id="email" name="mail">
+
 
         <div>
-          <label>Email
-            <input type="email" id="send" name="email">
-          </label>
-        </div>
-
-        <div>
-          <label>
-            <select id="dropdown" name="choose">
+          <label for="why">Why is coding cool?</label><br>
+            <select id="why" name="dropbar">
               <option value="option" selected>Select an option</option>
               <option value="interesting">Because it's interesting</option>
               <option value="fun">Because it is fun</option>
               <option value="powerful">Because it is powerful</option>
             </select>
-          </label>
+
         </div>
 
         <div>
           <p>Favorite Language (choose one)</p>
         </div>
+
         <div>
-          <label>
-            <input type="radio" id="firstcheck" name="check" value="html">HTML
-            <input type="radio" id="secondcheck" name="check" value="css">CSS
-            <input type="radio" id="thirdcheck" name="check" value="javascript">JavaScript
-          </label>
-        </div>
-        <div>
-          <p>Would you like to sign up for more information?</p>
-        </div>
-        <div>
-          <label>
-            <input type="checkbox" id="sign" value="signup">Sign me up!
-          </label>
-        </div>
-        <div>
-          <label>Comments
-            <textarea cols="20" rows="10" id="box"></textarea>
-         </label>
+
+            <input type="radio" id="firstCheck" value="html" name="check">
+              <label for="firstCheck">HTML</label>
+
+            <input type="radio" id="secondCheck" value="css" name="check">
+          <label for="secondCheck">CSS</label>
+            <input type="radio" id="thirdCheck" value="javascript" name="check">
+          <label for="thirdCheck">JavaScript</label>
         </div>
 
         <div>
-          <button type="submit">Submit</button>
+          <p>Would you like to sign up for more information?</p>
         </div>
-      </div>
-    </form>
-  </body>
-</html>
+
+        <div>
+
+            <input type="checkbox" id="signUp">
+            <label for="signUp">Sign me up!</label>
+        </div>
+
+        <div>
+        <label for="comment">Comments</label>
+          <br><textarea cols="20" rows="10" id="comment"></textarea>
+
+        </div>
+
+        <div>
+          <label for="click"></label>
+            <button type="submit" id="click">Submit</button>
+
+        </div>
+        </div>
+      </form>
+      </body>
+      </html>
