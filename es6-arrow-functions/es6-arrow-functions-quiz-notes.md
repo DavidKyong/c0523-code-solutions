@@ -12,8 +12,8 @@ After completing this exercise, you should be able to discuss or answer the foll
   By taking away the curly braces, and the return statement.
 - In the expression
   `js
-    foo(() => 42);
-    `
+  foo(() => 42);
+  `
   - Identify the arrow function
     () => 42
   - How many arguments does the arrow function take?
@@ -23,18 +23,19 @@ After completing this exercise, you should be able to discuss or answer the foll
   - How many arguments are passed to the function `foo`?
     one argument
   - What type of argument is passed to the function `foo`?
-    foo function
+    arrow function
 - In the expression
   `` js
-    bar((y) => {
-      console.log(`4y = ${4 * y}`);
-    });
-     `` - Identify the arrow function
+  bar((y) => {
+    console.log(`4y = ${4 * y}`);
+  });
+   `` - Identify the arrow function
   (y) => {console.log(`4y = ${4 * y}`);
   - How many arguments does the arrow function take?
     one argument (y)
   - What value does it return?
-    The console.log, y is not given a value though
+    The console.log, y is not given a value though.
+    It returns undefined because it does not have a return statement.
   - How many arguments are passed to the function `bar`?
     one argument
   - What type of argument is passed to the function `bar`?
