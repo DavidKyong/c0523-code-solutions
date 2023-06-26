@@ -6,6 +6,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 
 - How do you define a React component?
   A resuable UI element for the app.
+  A function followed by a capital first letter.
 - How do you use JSX in a React component?
   Since jsx is an extension, user converts some html markup to jsx render components.
 - How do you declare the props a React component needs?
@@ -21,7 +22,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - How do you manage state in a React component?
   By have an initial value and the setter value. Useing state to remember the old value as the new value is updated.
 - How do you handle events in React?
-  By passing them as a prop
+  By defining it in the parent componenent and passing it down to the parent.
 - How do you let a parent component know that an event happened?
   By passing a prop that the parent component can receive.
 
