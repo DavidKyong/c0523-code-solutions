@@ -9,9 +9,9 @@ After completing this exercise, you should be able to discuss or answer the foll
 - Why is it important for React components to be data-driven?
   Because it allows complex data to be stored and used for something else.
 - Where in the component code would a list of React components typically be built?
-  Right after the you start the function.
+  Right after the you start the function. Inside jsx inside the brackets using the map method.
 - What `Array` method is commonly used to create a list of React components?
-  The map and filter method.
+  The map method.
 - Why do components in a list need to have unique keys?
   Tells react which array item each component corersponds to and helps react infer what exactly has happened and make the correct updates to the DOM tree.
 - What is the best value to use as a "key" prop when rendering lists?
