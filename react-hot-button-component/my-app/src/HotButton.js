@@ -25,8 +25,11 @@ export default function HotButton() {
   }
 
   return (
-    <div>
-      <button onClick={onHotButton} style={{ backgroundColor: color }}>
+    <div className="container">
+      <button
+        onClick={onHotButton}
+        style={{ backgroundColor: color }}
+        className="Button">
         Hot Button
       </button>
       {count} Clicks
