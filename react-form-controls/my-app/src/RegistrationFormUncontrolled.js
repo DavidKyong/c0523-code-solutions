@@ -3,8 +3,6 @@ export default function RegistrationFormUncontrolled() {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    fetch({ method: event.target.method, body: formData });
-
     const state = Object.fromEntries(formData.entries());
 
     console.log(state);
@@ -12,10 +10,12 @@ export default function RegistrationFormUncontrolled() {
   return (
     <form onSubmit={handleSumbit}>
       <label>
-        Username<input name="username" required></input>
+        Username
+        <input name="username" required />
       </label>
       <label>
-        Password<input name="password" type="password" required></input>
+        Password
+        <input name="password" type="password" required />
       </label>
       <button type="submit">Sign Up</button>
     </form>

@@ -16,7 +16,8 @@ export default function RegistrationFormControlled() {
         <input
           value={username}
           onChange={(e) => setUsername(e.target.value)}
-          required></input>
+          required
+        />
       </label>
       <label>
         Password
@@ -24,7 +25,8 @@ export default function RegistrationFormControlled() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           type="password"
-          required></input>
+          required
+        />
       </label>
       <button type="submit">Sign Up</button>
     </form>
