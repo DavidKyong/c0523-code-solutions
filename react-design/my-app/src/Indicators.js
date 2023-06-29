@@ -3,7 +3,7 @@ export default function Indicators({ count, current, onIndicatorClick }) {
     <div style={{ display: 'flex', justifyContent: 'center' }}>
       {[...Array(count).keys()].map((index) => (
         <button
-          keys={index}
+          key={index}
           onClick={() => onIndicatorClick(index)}
           style={{
             backgroundColor: current === index ? 'lightblue' : '',
