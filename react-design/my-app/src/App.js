@@ -13,7 +13,7 @@ const items = [
 function App() {
   return (
     <div>
-      <RotatingBanner />
+      <RotatingBanner items={items} />
     </div>
   );
 }

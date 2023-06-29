@@ -1,7 +1,7 @@
-export default function Banner() {
+export default function Banner({ item }) {
   return (
-    <div>
-      <h3>Show the items</h3>
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <h3>{item}</h3>
     </div>
   );
 }

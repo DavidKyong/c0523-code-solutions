@@ -1,3 +1,9 @@
-export default function PrevButton() {
-  return <button className="previous">Prev</button>;
+export default function PrevButton({ onPrevClick }) {
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <button className="previous" onClick={onPrevClick}>
+        Prev
+      </button>
+    </div>
+  );
 }

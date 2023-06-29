@@ -1,3 +1,16 @@
-export default function Indicators({ number }) {
-  return <button className="indicator">{number}</button>;
+export default function Indicators({ count, current, onIndicatorClick }) {
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
+      {[...Array(count).keys()].map((index) => (
+        <button
+          keys={index}
+          onClick={() => onIndicatorClick(index)}
+          style={{
+            backgroundColor: current === index ? 'lightblue' : '',
+          }}>
+          {index}
+        </button>
+      ))}
+    </div>
+  );
 }
