@@ -8,7 +8,7 @@ export default function Filter({ filteredItems }) {
           ))}
         </ul>
       ) : (
-        <p>No items match the filter.</p>
+        <p>No items match the filter</p>
       )}
     </div>
   );
