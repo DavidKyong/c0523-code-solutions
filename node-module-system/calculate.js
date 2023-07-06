@@ -7,14 +7,14 @@ const num1 = Number(process.argv[2]);
 const operator = process.argv[3];
 const num2 = Number(process.argv[4]);
 
-if (operator === '+' || operator === 'plus') {
+if (operator === 'plus') {
   console.log(`result: ${add(num1, num2)}`);
-} else if (operator === '-' || operator === 'minus') {
+} else if (operator === 'minus') {
   console.log(`result: ${subtract(num1, num2)}`);
-} else if (operator === '*' || operator === 'multiply') {
+} else if (operator === 'multiply') {
   console.log(`result: ${multiply(num1, num2)}`);
-} else if (operator === '/' || operator === 'divide') {
+} else if (operator === 'divide') {
   console.log(`result: ${divide(num1, num2)}`);
 } else {
-  console.log(`invalid operator`);
+  console.log(`invalid operator:`, operator);
 }
