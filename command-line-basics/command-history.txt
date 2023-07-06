@@ -1,0 +1,500 @@
+   71  git switch main
+   72  git status
+   73  git switch react-refresher
+   74  git status
+   75  git add react-refresher
+   76  git status
+   77  git add react-refresher
+   78  git status
+   79  cd react-refresher
+   80  cd my-app
+   81  cd ..
+   82  cd ..
+   83  git add react-refresher
+   84  git status
+   85  git switch main
+   86  git status
+   87  git switch react
+   88  git switch react-refresher
+   89  git status
+   90  git commit -m"Removedd string manipulation-2"
+   91  git status
+   92  git push origin react-refresher
+   93  git switch string-manipulation-2
+   94  git add .
+   95  git status
+   96  git commit -m"Update exercise with new folder"
+   97  git switch main
+   98  git switch react-refresher
+   99  git status
+  100  git switch main
+  101  git status
+  102  git switch react-refresher
+  103  git add .
+  104  git status
+  105  git commit -m"Removed string manipulation-2"
+  106  git push origin react-refresher
+  107  git switch string-manipulation-2
+  108  git add .
+  109  git status
+  110  git commit -m"Update exercise with new folder"
+  111  git switch main
+  112  git switch react-refresher
+  113  git switch main
+  114  git add react-refresher
+  115  git commit -m"FIxed quiz questions"
+  116  git push origin react-refresher
+  117  git switch main
+  118  git branch react-hot-button-component
+  119  git switch react-hot-button-componenet
+  120  git switch react-hot-button-component
+  121  cd react-hot-button-component
+  122  cd react-hot-button-component
+  123  npx create-react-app my-app
+  124  cd my-app
+  125  npm run start
+  126  cd ..
+  127  cd ..
+  128  git add react-hot-button-component/
+  129  git status
+  130  git commit -m"Completed react-hot-button-component challenge"
+  131  cd react-hot-button-component/
+  132  cd my-app
+  133  npm run start
+  134  cd ..
+  135  cd ..
+  136  git add react-hot-button-component/
+  137  git commit -m"Completed react-hot-button-component challenge"
+  138  git push origin react-hot-button-component 
+  139  git switch main
+  140  git pull origin main
+  141  git branch react-toggle-switch-component
+  142  git switch react-toggle-switch-component 
+  143  git switch main
+  144  git status
+  145  git switch react-toggle-switch-component 
+  146  cd -react-toggle-switch-component
+  147  cd react-toggle-switch-component/
+  148  npx create-react-app my-app
+  149  cd my-app
+  150  npm run start
+  151  cd ..
+  152  cd ..
+  153  git switch main
+  154  git branch react-rendering-lists
+  155  git switch react-rendering-lists
+  156  cd react-rendering-lists
+  157  npx create-react-app my-app
+  158  cd my-app
+  159  npm run start
+  160  cd ..
+  161  cd ..
+  162  git add react-rendering-lists
+  163  git status
+  164  git commit m"Completed react-rendering-lists exercise"
+  165  git commit -m"Completed react-rendering-lists exercise"
+  166  git push origin react-rendering-lists 
+  167  git add react-rendering-lists/
+  168  git commit -m"Fixed some quiz questions"
+  169  git push origin react-rendering-lists
+  170  git switch main
+  171  git branch react-form-controls
+  172  git switch react-form-controls
+  173  cd react-form-controls/
+  174  npx create-react-app my-app
+  175  cd my-app
+  176  npm run start
+  177  npm run start
+  178  cd ..
+  179  cd ..
+  180  git add react-form-controls/
+  181  git commit -m"Completed react-form-controls execise"
+  182  git push origin react-form-controls
+  183  git add react-form-controls
+  184  git commit -m"Fixed the changes"
+  185  git push origin react-form-controls 
+  186  git switch main
+  187  git pull origin main
+  188  git branch react-validated-input-component
+  189  git switch react-validated-input-component 
+  190  cd react-validated-input-component/
+  191  npx create-react-app my-app
+  192  cd my-app
+  193  npm run start
+  194  npm run start
+  195  cd ..
+  196  cd ..
+  197  git switch main
+  198  git switch react-rendering-lists 
+  199  git switch react-form
+  200  git switch react-form-controls 
+  201  git switch main
+  202  git branch react-design
+  203  git switch react-design
+  204  cd react-design
+  205  npx create-react-app my-app
+  206  cd my-app
+  207  npm run start
+  208  cd ..
+  209  cd ..
+  210  git switch main
+  211  git pull origin main
+  212  git switch react-design 
+  213  cd react-design/
+  214  cd my-app
+  215  npm run start
+  216  npm start
+  217  cd ..
+  218  cd ..
+  219  git add react-design
+  220  git status
+  221  git commit -m"Completed Phase 1 of react-design"
+  222  git push origin react-design
+  223  cd react-design
+  224  cd my-app
+  225  run start
+  226  npm start
+  227  npm run start
+  228  cd ..
+  229  cd ..
+  230  cd react-design
+  231  cd my-app
+  232  npm run start
+  233  cd ..
+  234  cd ..
+  235  git add react-design/
+  236  git status
+  237  git commit -m"Completed phase 2 and phase 3 for react-design"
+  238  git push origin react-design 
+  239  git siwtch main
+  240  git switch main
+  241  git pull origin main
+  242  git switch javascript-timers 
+  243  git add javascript-timers/
+  244  git status
+  245  git commit -m"Fixed the error"
+  246  git push origin javascript-timers 
+  247  git switch main
+  248  git switch dom-event-delegation 
+  249  git add dom-event-delegation/
+  250  git status
+  251  git commit -m"Fixed the error"
+  252  git push origin dom-event-delegation
+  253  git switch react-des
+  254  git switch react-design 
+  255  cd react-design
+  256  cd my-app
+  257  npm run start
+  258  cd ..
+  259  cd ..
+  260  git add react-design
+  261  git status
+  262  git commit -m"Fixed the errors and answered the quiz questions"
+  263  git push origin react-design 
+  264  git switch main
+  265  git branch react-search-component
+  266  git switch react-search-component 
+  267  cd react-search-component
+  268  npx create-react-app my-app
+  269  cd my-app/
+  270  npm run start
+  271  cd ..
+  272  cd ..
+  273  git switch main
+  274  git status
+  275  git branch react-accordion-component
+  276  git switch react-accordion-component
+  277  cd react-accordion-component/
+  278  npx create-react-app my-app
+  279  cd my-app
+  280  npm run start
+  281  cd ..
+  282   cd..
+  283  cd ..
+  284  git switch react-search-component 
+  285  cd react-search-component/
+  286  cd my-app/
+  287  npm run start
+  288  cd ..
+  289  cd ..
+  290  cd react-search-component/
+  291  cd my-app/
+  292  npm run start
+  293  cd ..
+  294  cd ..
+  295  git add react-search-component/
+  296  git status
+  297  git commit -m"Completed react-search-component challenge"
+  298  git push origin react-search-component
+  299  git switch react-accordion-component 
+  300  cd react-accordion-component/
+  301  cd my-app/
+  302  npm run start
+  303  cd ..
+  304   cd..
+  305  cd ..
+  306  git switch react-search-component 
+  307  cd react-search-component/
+  308  cd my-app
+  309  npm run start
+  310  cd ..
+  311  cd ..
+  312  git add react-search-component
+  313  git status
+  314  git commit -m"Made two components where searchablelist component is the parent"
+  315  git push origin react-search-component 
+  316  git switch react-accordion-component 
+  317  cd react-accordion-component/
+  318  cd my-app/
+  319  nom run start
+  320  npm run start
+  321  cd ..
+  322  cd ..
+  323  git switch main
+  324  git branch react-app-drawer-component
+  325  git switch react-app-drawer-component 
+  326  cd react-app-drawer-component/
+  327  npx create-react-app my-app
+  328  cd my-app
+  329  npm run start
+  330  npm install react-icons
+  331  npm run start
+  332  npm run start
+  333  cd ..
+  334  cd ..
+  335  git switch react-search-component 
+  336  cd react-search-component/
+  337  cd my-app/
+  338  npm run start
+  339  cd ..
+  340  cd ..
+  341  git switch main
+  342  git add react-search-component/
+  343  git status
+  344  git commit -m"Just made some minor changes and reviewing my code"
+  345  git push origin react-sear
+  346  git push origin react-search-component 
+  347  git switch main
+  348  git switch react-accordion-component 
+  349  cd react-accordion-component/
+  350  cd my-app/
+  351  npm run start
+  352  cd ..
+  353  cd ..
+  354  git add react-accordion-component/
+  355  git commit -m"Completed react-accordion-component challenge"
+  356  git push origin react-accordion-component 
+  357  git switch react-app-drawer-component 
+  358  cd react-app-drawer-component/
+  359  cd my-app/
+  360  npm run start
+  361  cd ..
+  362  cd ..
+  363  git switch react-search-component 
+  364  cd react-search-component/
+  365  cd my-app
+  366  npm run start
+  367  cd ..
+  368  cd ..
+  369  git switch react-validated-input-component 
+  370  cd react-validated-input-component/
+  371  cd my-app
+  372  npm run start
+  373  cd ..
+  374  cd ..
+  375  git switch react-search-component 
+  376  cd react-search-component/
+  377  cd my-app/
+  378  npm run start
+  379  cd ..
+  380   cd..
+  381  cd ..
+  382  git switch react-accordion-component 
+  383  cd react-accordion-component/
+  384  cd my-app/
+  385  npm run start
+  386  cd ..
+  387  cd ..
+  388  git switch main
+  389  git switch react-validated-input-component 
+  390  cd react-validated-input-component/
+  391  cd my-app
+  392  npm run start
+  393  cd ..
+  394  cd ..
+  395  git add react-validated-input-component/
+  396  git status
+  397  git commit -m"Completed react-validated-input-component challenge"
+  398  git push origin react-validated-input-component 
+  399  git switch main
+  400  git switch react-app-drawer-component 
+  401  cd react-app-drawer-component/
+  402  cd my-app/
+  403  git switch react-validated-input-component 
+  404  cd react-validated-input-component/
+  405  cd my-app/
+  406  npm run start
+  407  npm install
+  408  npm run start
+  409  cd ..
+  410  cd ..
+  411  git switch main
+  412  git pull origin main
+  413  git switch react-search-component 
+  414  cd react-search-component/
+  415  cd my-app/
+  416  npm run start
+  417  npm run start
+  418  npm run start
+  419  npm run start
+  420  cd ..
+  421  cd ..
+  422  git switch main
+  423  git pull origin main
+  424  git switch react-search-component 
+  425  cd react-search-component/
+  426  cd my-app
+  427  npm run start
+  428  npm run start
+  429  cd ..
+  430   cd..
+  431  cd ..
+  432  git switch main
+  433  git switch react-accordion-component 
+  434  cd react-accordion-component/
+  435  cd my-app
+  436  npm run start
+  437  npm run start
+  438  cd react-accordion-component/
+  439  cd my-app/
+  440  npm run start
+  441  cd ..
+  442  cd ..
+  443  git switch main
+  444  git pull origin main
+  445  git switch react-app-drawer-component 
+  446  cd react-app-drawer-component/
+  447  cd my-app/
+  448  npm run start
+  449  cd react-app-drawer-component/
+  450  cd my-app/
+  451  npm run start
+  452  cd ..
+  453  cd ..
+  454  git switch main
+  455  git status
+  456  git branch string-manipulation-2
+  457  git switch string-manipulation-2
+  458  git switch string-manipulation-2
+  459  git rm string-manipulation-2
+  460  git switch object-manipulation-2
+  461  git switch main
+  462  git pull origin main
+  463  git pull origin main
+  464  git switch react-toggle-switch-component 
+  465  cd react-toggle-switch-component/
+  466  cd my-app/
+  467  npm run start
+  468  git switch main
+  469  git pull origin main
+  470  git restore .
+  471  git status
+  472  git switch react-toggle-switch-component 
+  473  cd react-toggle-switch-component/
+  474  cd my-app/
+  475  npm run start
+  476  git switch javascript-loops
+  477  git switch main
+  478  git switch react-toggle-switch-component 
+  479  cd react-toggle-switch-component/
+  480  cd my-app/
+  481  npm run start
+  482  git switch main
+  483  npm install
+  484  git switch react-toggle-switch-component 
+  485  cd react-toggle-switch-component/
+  486  cd my-app/
+  487  npm run start
+  488  cd react-toggle-switch-component/
+  489  cd my-app/
+  490  npm run start
+  491  npm run build
+  492  cd ..
+  493  cd ..
+  494  git switch main
+  495  npm install
+  496  git switch react-state 
+  497  cd react-state/
+  498  cd my-app/
+  499  npm run start
+  500  git switch react-search-component 
+  501  cd react-search-component/
+  502  cd my-app/
+  503  npm run start
+  504  cd ..
+  505  cd ..
+  506  git switch main
+  507  git pull origin main
+  508  git branch command-line-basics
+  509  git switch command-line-basics 
+  510  cd command-line-basics
+  511  man man
+  512  man cat
+  513  cat cat laziness.txt
+  514  cat laziness.txt 
+  515  cat impatience.txt 
+  516  cat hubris.txt 
+  517  cat laziness.txt impatience.txt hubris.txt 
+  518  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  519  cat three-virtues.txt 
+  520  man ls
+  521  ls
+  522  ls -a
+  523  ls -F
+  524  ls lfz-staff/
+  525  ls lfz-staff/
+  526  ls -a lfz-staff/
+  527  ls -F lfz-staff/
+  528  ls -aF lfz-staff > lfz-staff/contents.txt
+  529  cat lfz-staff/contents.txt
+  530  man pwd
+  531  pwd
+  532  pwd > i-was-here.txt
+  533  cat i-was-here.txt 
+  534  man echo
+  535  echo 'Hello World!'
+  536  echo 'Hello World!' > hello.txt
+  537  ls
+  538  cat hello.txt 
+  539  man touch
+  540  touch
+  541  touch > tag-youre-it.txt
+  542  touch > snoot/boop.txt
+  543  ls snoot
+  544  ls -a snoot
+  545  man mkdir
+  546  mkdir parent
+  547  ls parent
+  548  ls -a parent
+  549  mkdir parent/child/grandchild
+  550  mkdir -p parent/child/grandchild
+  551  touch .gitkeep > parent/child/grandchild
+  552  touch .gitkeep > parent
+  553  touch parent/child/grandchild/.gitkeep
+  554  ls -a parent
+  555  ls -a parent/child/grandchild
+  556  man mv
+  557  mv pokiemans pokemon
+  558  ls
+  559  man rm
+  560  rm lol.txt 
+  561  ls
+  562  rm -r kill-me/
+  563  ls
+  564  man cp
+  565  cp and-then.txt no-and-then.txt
+  566  ls
+  567  cat and-then.txt no-and-then.txt 
+  568  man history
+  569  history
+  570  history > command-history.txt
