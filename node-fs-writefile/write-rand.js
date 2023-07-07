@@ -5,7 +5,7 @@ async function writeRandomNumberToFile() {
     const randomNumber = Math.random();
     const fileContents = `${randomNumber}\n`;
 
-    await writeFile('random.txt', fileContents, { encoding: 'utf8' });
+    await writeFile('random.txt', fileContents, 'utf8');
 
     console.log('Success');
   } catch (error) {
