@@ -1,4 +1,4 @@
-export default function Filter({ filteredItems }) {
+export default function ItemList({ filteredItems }) {
   return (
     <div>
       {filteredItems.length > 0 ? (
