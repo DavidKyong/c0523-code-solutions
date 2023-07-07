@@ -5,11 +5,11 @@ async function noteToSelf() {
     const write = process.argv[2];
     const note = `${write}\n`;
 
-    await writeFile('note.txt', note, { encoding: 'utf8' });
+    await writeFile('note.txt', note, 'utf8');
 
     console.log('Success');
   } catch (error) {
-    console.error('Error:', error.message);
+    console.error('Error:', error);
   }
 }
 

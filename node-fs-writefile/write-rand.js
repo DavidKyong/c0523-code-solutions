@@ -9,7 +9,7 @@ async function writeRandomNumberToFile() {
 
     console.log('Success');
   } catch (error) {
-    console.error('Error:', error.message);
+    console.error('Error:', error);
   }
 }
 

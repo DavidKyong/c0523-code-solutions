@@ -10,7 +10,7 @@ async function cp() {
 
     console.log('Success');
   } catch (error) {
-    console.error('Error:', error.message);
+    console.error('Error:', error);
   }
 }
 
