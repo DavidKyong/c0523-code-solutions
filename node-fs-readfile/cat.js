@@ -5,14 +5,14 @@ async function cat() {
     const fileNames = process.argv.slice(2);
 
     const filePromises = fileNames.map((fileName) =>
-      readFile(fileName, { encoding: 'utf8' })
+      readFile(fileName, 'utf8')
     );
     const fileContents = await Promise.all(filePromises);
     const concatenatedContents = fileContents.join('\n');
 
     console.log(concatenatedContents);
-  } catch (err) {
-    console.error('Error:', err.message);
+  } catch (error) {
+    console.error('Error:', error);
   }
 }
 
