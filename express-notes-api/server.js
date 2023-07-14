@@ -9,68 +9,68 @@ app.listen(8000, () => {
   console.log('Listening at port 8000');
 });
 
-app.get('/api/notes', async (req, res) => {
+async function readData() {
   const fileContents = await readFile('data.json', 'utf8');
   const jsonData = JSON.parse(fileContents);
-  const arr = [];
-  for (const key in jsonData.notes) {
-    arr.push(jsonData.notes[key]);
-  }
+  return jsonData;
+}
+
+async function writeData(jsonData) {
+  await writeFile('data.json', JSON.stringify(jsonData, null, 2));
+}
+
+app.get('/api/notes', async (req, res) => {
   try {
+    const jsonData = await readData();
+    const arr = [];
+    for (const key in jsonData.notes) {
+      arr.push(jsonData.notes[key]);
+    }
     if (!jsonData) {
       res.json([]);
     }
     res.status(200).json(arr);
   } catch (error) {
     console.log(error);
+    res.status(500).json({ error: 'An unexpected error occurred.' });
   }
 });
 
 app.get('/api/notes/:id', async (req, res) => {
-  const id = Number(req.params.id);
-  const fileContents = await readFile('data.json', 'utf8');
-  const jsonData = JSON.parse(fileContents);
-
   try {
+    const jsonData = await readData();
+    const id = Number(req.params.id);
     if (id <= 0) {
-      await res.status(400).json({ error: 'id must be a positive integer' });
+      res.status(400).json({ error: 'id must be a positive integer' });
       return;
     }
-    if (!jsonData.notes[id]) {
-      await res.status(404).json({ error: `cannot find note with id ${id}` });
+    if (jsonData.notes[id] === undefined) {
+      res.status(404).json({ error: `cannot find note with id ${id}` });
       return;
     }
-    await res.status(200).json(jsonData.notes[id]);
-    return;
+    res.status(200).json(jsonData.notes[id]);
   } catch (error) {
     console.error(error);
+    res.status(500).json({ error: 'An unexpected error occurred.' });
   }
 });
 
-let nextId = 10;
-
 app.post('/api/notes', async (req, res) => {
-  const { content } = req.body;
-  const fileContents = await readFile('data.json', 'utf8');
-  const jsonData = JSON.parse(fileContents);
-
-  const newContent = {
-    id: nextId++,
-    content,
-  };
-
   try {
+    const { content } = req.body;
+    const jsonData = await readData();
     if (!content) {
       res.status(400).json({ error: 'content is a required field' });
       return;
     }
-    jsonData.nextId++;
+    const newContent = {
+      id: jsonData.nextId,
+      content,
+    };
     jsonData.notes[newContent.id] = newContent;
-
-    await writeFile('data.json', JSON.stringify(jsonData, null, 2));
-
+    jsonData.nextId++;
+    await writeData(jsonData);
     res.status(201).json(newContent);
-    return;
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'An unexpected error occurred.' });
@@ -78,21 +78,19 @@ app.post('/api/notes', async (req, res) => {
 });
 
 app.delete('/api/notes/:id', async (req, res) => {
-  const id = Number(req.params.id);
-  const fileContents = await readFile('data.json', 'utf8');
-  const jsonData = JSON.parse(fileContents);
-
   try {
+    const id = Number(req.params.id);
     if (id <= 0) {
-      await res.status(400).json({ error: 'id must be a positive integer' });
+      res.status(400).json({ error: 'id must be a positive integer' });
       return;
     }
-    if (!jsonData.notes[id]) {
-      await res.status(404).json({ error: `cannot find note with id ${id}` });
+    const jsonData = await readData();
+    if (jsonData.notes[id] === undefined) {
+      res.status(404).json({ error: `cannot find note with id ${id}` });
       return;
     }
     delete jsonData.notes[id];
-    await writeFile('data.json', JSON.stringify(jsonData, null, 2));
+    await writeData(jsonData);
     res.sendStatus(204);
     return;
   } catch (error) {
@@ -102,27 +100,26 @@ app.delete('/api/notes/:id', async (req, res) => {
 });
 
 app.put('/api/notes/:id', async (req, res) => {
-  const id = Number(req.params.id);
-  const { content } = req.body;
-  const fileContents = await readFile('data.json', 'utf8');
-  const jsonData = JSON.parse(fileContents);
-
   try {
+    const id = Number(req.params.id);
     if (id <= 0) {
       await res.status(400).json({ error: 'id must be a positive integer' });
       return;
     }
-    if (!jsonData.notes[id] && !content) {
-      await res.status(404).json({ error: 'content is a required field' });
+    const { content } = req.body;
+    if (content === undefined) {
+      res.status(404).json({ error: 'content is a required field' });
       return;
     }
-
-    jsonData.notes[id].content = content;
-
-    await writeFile('data.json', JSON.stringify(jsonData, null, 2));
-
-    res.status(200).json(jsonData.notes[id]);
-    return;
+    const jsonData = await readData();
+    if (jsonData.notes[id] === undefined) {
+      res.status(404).json({ error: `cannot find note with id ${id}` });
+      return;
+    }
+    const newContent = { id, content };
+    jsonData.notes[id].content = newContent;
+    await writeData(jsonData);
+    res.json(newContent);
   } catch (error) {
     console.log(error);
     res.status(500).json({ error: 'An unexpected error occurred.' });
