@@ -8,6 +8,7 @@ After completing this exercise, you should be able to discuss or answer the foll
   Returns a promise that resolves with a response object.
 - What is the default request method used by `fetch()`?
   By using the fetch method where the parameter is the resource/URL and then using the json method on the response back.
+  Get method.
 - How do you specify the request method (`GET`, `POST`, etc.) when calling `fetch`?
   Init object
   By using the second parameter like method: "POST", // \*GET, POST, PUT, DELETE, etc.
