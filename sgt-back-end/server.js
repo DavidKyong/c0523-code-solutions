@@ -61,7 +61,6 @@ app.get('/api/grades/:gradeId', async (req, res, next) => {
     // the query failed for some reason
     // possibly due to a syntax error in the SQL statement
     // print the error to STDERR (the terminal) for debugging purposes
-    console.error(err);
     // respond to the client with a generic 500 error message
     next(err);
   }
@@ -77,7 +76,6 @@ app.get('/api/grades', async (req, res, next) => {
     const [grade] = result.rows;
     res.status(200).json(grade);
   } catch (error) {
-    console.error(error);
     next(error);
   }
 });
@@ -99,7 +97,6 @@ app.post('/api/grades', async (req, res, next) => {
     const grade = result.rows;
     res.status(201).json(grade);
   } catch (error) {
-    console.log(error);
     next(error);
   }
 });
@@ -122,15 +119,16 @@ app.put('/api/grades/:gradeId', async (req, res, next) => {
          where "grades"."gradeId" = $1
          returning *;
     `;
-    if (sql === undefined) {
-      throw new ClientError(404, 'targert grade may not exist in the database');
-    }
     const values = [gradeId, name, course, score];
-    const result = await db.query(sql, values);
+    const [result] = await db.query(sql, values);
+
+    if (!result) {
+      throw new ClientError(404, 'target grade may not exist in the database');
+    }
+
     const grade = result.rows;
     res.status(201).json(grade);
   } catch (error) {
-    console.log(error);
     next(error);
   }
 });
@@ -144,16 +142,18 @@ app.delete('/api/grades/:gradeId', async (req, res, next) => {
     const sql = `
       delete
         from "grades"
-        where "grades"."gradeId" = $1;
+        where "grades"."gradeId" = $1
+        returning *;
     `;
-    if (sql === undefined) {
+    const params = [gradeId];
+    const [deleted] = await db.query(sql, params);
+
+    if (!deleted) {
       throw new ClientError(404, 'target grade may not exist in the database');
     }
-    const params = [gradeId];
-    await db.query(sql, params);
-    res.status(204).json('success');
+    const grade = deleted.rows;
+    res.status(204).json(grade);
   } catch (error) {
-    console.error(error);
     next(error);
   }
 });
