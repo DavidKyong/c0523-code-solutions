@@ -45,7 +45,7 @@ export default function App() {
    * and pass `contextValue` as the Provider value.
    */
   return (
-    <AppContext.Provider value={(user, handleSignIn)}>
+    <AppContext.Provider value={contextValue}>
       <Routes>
         <Route path="/" element={<NavBar />}>
           <Route index element={<Home />} />
